@@ -2,33 +2,60 @@ body {
     background-color: #061641;
 }
 
-.topTitels {
-    height: 20vw;
+.box {
+
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
 }
 
-.chapterOneTitels {
-    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
-    /* IE6-9 */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4em;
-    transition: font-size 1s;
-    position: absolute;
-    text-transform: uppercase;
-    left: 22%;
+/* Set the height of the entire page to 100% */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 
-    &:after {
-        background: none;
-        content: attr(data-text);
-        left: 0;
-        position: absolute;
-        text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5),
-            3px 1px 3px rgba(255, 0, 255, 0.85),
-            -3px -2px 3px rgba(0, 0, 255, 0.85),
-            1px -2px 0 rgba(255, 255, 255, 0.8);
-        z-index: -3;
-    }
+/* Top box with 20% height and full width */
+.chapterOneBox {
+    width: 100%;
+    height: 20%;
+}
+
+/* Bottom box with 10% height and full width */
+.bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+.middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+.midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+.centreCentreBox {
+    width: 70%;
+    height: 100%;
+
+}
+
+/* Right column with 15% width and full height of middle container */
+.midRightCol {
+    width: 15%;
+    height: 100%;
 }
