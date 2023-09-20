@@ -61,9 +61,11 @@ body {
 
 /* Center column with 70% width and full height of middle container */
 .centreCentreBox {
+    background-image: url(/img/tunnels/tunnel1.png);
+    /* background-image: url(/img/walkingBiden1-transformed.png); */
+
     width: 70%;
     height: 100%;
-    background-image: url(/img/ericsmith.avif);
     background-size: cover;
 }
 
@@ -104,11 +106,12 @@ body {
     font-size: xx-large;
 }
 
+
 .speechBubble {
     top: -150px;
-    left: -250px;
+    left: 100px;
     width: 360px;
-    height: 260px;
+    height: 200px;
     background: white;
     position: relative;
     -moz-border-radius: 12px;
@@ -120,12 +123,12 @@ body {
 .speechBubble:before {
     content: '';
     position: absolute;
-    left: 100%;
+    right: 100%;
     top: 36px;
     width: 0;
     height: 0;
     border-top: 13px solid transparent;
-    border-left: 36px solid white;
+    border-right: 36px solid white;
 }
 
 .textInSpeechBubble {
