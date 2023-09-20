@@ -63,7 +63,7 @@ body {
 .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(/img/bidenSituationMir.png);
+    background-image: url(/img/ericsmith.avif);
     background-size: cover;
 }
 
@@ -106,9 +106,9 @@ body {
 
 .speechBubble {
     top: -150px;
-    left: -100px;
-    width: 350px;
-    height: 100px;
+    left: -250px;
+    width: 360px;
+    height: 260px;
     background: white;
     position: relative;
     -moz-border-radius: 12px;
@@ -120,12 +120,12 @@ body {
 .speechBubble:before {
     content: '';
     position: absolute;
-    right: 100%;
+    left: 100%;
     top: 36px;
     width: 0;
     height: 0;
     border-top: 13px solid transparent;
-    border-right: 36px solid white;
+    border-left: 36px solid white;
 }
 
 .textInSpeechBubble {
