@@ -1,10 +1,5 @@
-.startScreenContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    /* Ensures columns stretch to the same height */
-    flex-wrap: wrap;
-    /* Allows columns to wrap to the next line if necessary */
+body {
+    background-color: #061641;
 }
 
 .leftColumn {
@@ -34,11 +29,22 @@
     margin-bottom: 10px;
 }
 
-body {
-    background-color: #061641;
+#startScreenGameBeginning {
+    display: flex;
 }
 
-h1 {
+#startScreenGameBeginning .startScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+}
+
+
+
+#startScreenGameBeginning h1 {
     background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
@@ -65,7 +71,7 @@ h1 {
     }
 }
 
-h2 {
+#startScreenGameBeginning h2 {
     text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5),
         2px 1px 2px rgba(255, 0, 255, 0.85),
         -3px -2px 3px rgba(0, 0, 255, 0.85),
@@ -82,18 +88,18 @@ h2 {
     padding-left: 150px;
 }
 
-.disclaimer {
+#startScreenGameBeginning .disclaimer {
     background-color: aquamarine;
     text-align: center;
     font-weight: bold;
 }
 
-.wrapper {
+#startScreenGameBeginning .wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.startBtn {
+#startScreenGameBeginning .startBtn {
     width: 100%;
     font-size: x-large;
     font-weight: bold;
@@ -102,7 +108,7 @@ h2 {
 }
 
 
-.button-container {
+#startScreenGameBeginning .button-container {
     position: absolute;
     left: 25%;
     right: 25%;
@@ -112,12 +118,12 @@ h2 {
     align-items: center;
 }
 
-.startBtn:hover {
+#startScreenGameBeginning .startBtn:hover {
     background-color: rgb(35, 213, 35);
     color: rgb(201, 68, 20);
 }
 
-.disclaimer {
+#startScreenGameBeginning .disclaimer {
     position: absolute;
     height: 5%;
     left: 25%;
@@ -139,4 +145,175 @@ h2 {
     background-color: burlywood;
     font-size: larger;
     border-radius: 50%;
+}
+
+/* THIS IS THE PART WHERE IS START IMPLEMENTING ALL THE OTHER PAGES ID'S */
+
+#chapterOneScreenOne {
+    display: none;
+}
+
+#chapterOneScreenOne .leftColumn {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chapterOneScreenOne .leftColumn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#chapterOneScreenOne .centerColumn {
+    width: 60%;
+}
+
+
+#chapterOneScreenOne .rightColumn {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightColumn img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+#chapterOneScreenOne .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+
+}
+
+/* Bottom box with 10% height and full width */
+#chapterOneScreenOne .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#chapterOneScreenOne .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#chapterOneScreenOne .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#chapterOneScreenOne .centreCentreBox {
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/bidenSituationMir.png);
+    background-size: cover;
+}
+
+
+#chapterOneScreenOne .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#chapterOneScreenOne .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#chapterOneScreenOne .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#chapterOneScreenOne .scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#chapterOneScreenOne .speechBubble {
+    top: -150px;
+    left: -100px;
+    width: 350px;
+    height: 100px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+#chapterOneScreenOne .speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+#chapterOneScreenOne .textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* next screen */
+#chapterOneScreenTwo {
+    display: none;
+}
+
+/* next screen */
+#chapterOneScreenThree {
+    display: none;
+}
+
+/* next screen */
+#chapterOneScreenFour {
+    display: none;
+}
+
+/* next screen */
+#chapterTwoScreen1 {
+    display: none;
+}
+
+/* next screen */
+#chapterTwoScreen2 {
+    display: none;
+}
+
+/* next screen */
+#gameOverScreen {
+    display: none;
+}
+
+/* next screen */
+#congratulationsScreen {
+    display: none;
 }
