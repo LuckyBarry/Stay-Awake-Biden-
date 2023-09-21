@@ -61,12 +61,25 @@ body {
 
 /* Center column with 70% width and full height of middle container */
 .centreCentreBox {
-    background-image: url(/img/tunnels/tunnel1.png);
-    /* background-image: url(/img/walkingBiden1-transformed.png); */
-
+    position: relative;
     width: 70%;
     height: 100%;
+    background-image: url(/img/tunnels/tunnel1.png);
     background-size: cover;
+}
+
+.centreCentreBox::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-image: url(/img/walkingBiden1-transformed.png);
+    background-size: 100%;
+
+    z-index: 1;
+
 }
 
 /* Right column with 15% width and full height of middle container */

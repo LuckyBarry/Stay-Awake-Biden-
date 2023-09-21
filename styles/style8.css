@@ -1,0 +1,151 @@
+body {
+    background-color: #010000;
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+/* Set the height of the entire page to 100% */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Top box with 20% height and full width */
+.chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+
+}
+
+/* Bottom box with 10% height and full width */
+.bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+.middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+.midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+.centreCentreBox {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/fireEndScreen.png);
+    background-size: cover;
+}
+
+.centreCentreBox::after {
+    content: "";
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-image: url(/img/joeBidenSmelsGas\ 2.webp);
+    background-size: 100%;
+
+    z-index: 1;
+
+}
+
+/* Right column with 15% width and full height of middle container */
+.midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+.threeOptions h3 {
+    text-align: center;
+
+}
+
+.optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+.leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+
+.speechBubble {
+    top: -50px;
+    left: 250px;
+    width: 360px;
+    height: 200px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+.speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+.textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
