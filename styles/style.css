@@ -230,7 +230,7 @@ body {
 #chapterOneScreenOne .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(img/bidenSituationMir.png);
+    background-image: url(../img/bidenSituationMir.png);
     background-size: cover;
 }
 
@@ -378,7 +378,7 @@ body {
 #chapterOneScreenTwo .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(./img/ericsmith.avif);
+    background-image: url(../img/ericsmith.avif);
     background-size: cover;
 }
 
@@ -676,7 +676,7 @@ body {
 #chapterOneScreenFour .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(/img/ericsmith.avif);
+    background-image: url(../img/ericsmith.avif);
     background-size: cover;
 }
 
@@ -825,7 +825,7 @@ body {
     position: relative;
     width: 70%;
     height: 100%;
-    background-image: url(/img/tunnels/tunnel1.png);
+    background-image: url(../img/tunnels/tunnel1.png);
     background-size: cover;
 }
 
@@ -837,7 +837,7 @@ body {
     left: 0;
     width: 80%;
     height: 80%;
-    background-image: url(/img/walkingBiden1-transformed.png);
+    background-image: url(../img/walkingBiden1-transformed.png);
     background-size: 100%;
 
     z-index: 1;
@@ -989,7 +989,7 @@ body {
 #chapterTwoScreen2 .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(/img/compInTunnelOne.png);
+    background-image: url(../img/compInTunnelOne.png);
     background-size: cover;
 }
 
@@ -1147,7 +1147,7 @@ body {
     position: relative;
     width: 70%;
     height: 100%;
-    background-image: url(/img/fireEndScreen.png);
+    background-image: url(../img/fireEndScreen.png);
     background-size: cover;
 }
 
@@ -1159,7 +1159,7 @@ body {
     left: 0;
     width: 80%;
     height: 80%;
-    background-image: url(/img/joeBidenSmelsGas\ 2.webp);
+    background-image: url(../img/joeBidenSmelsGas\ 2.webp);
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -1318,7 +1318,7 @@ body {
     position: relative;
     width: 70%;
     height: 100%;
-    background-image: url(/img/fireworks.jpg);
+    background-image: url(../img/fireworks.jpg);
     background-size: cover;
 }
 
@@ -1330,7 +1330,7 @@ body {
     left: 80;
     width: 60%;
     height: 60%;
-    background-image: url(/img/joemadeit-transformed.png);
+    background-image: url(../img/joemadeit-transformed.png);
     background-size: 100%;
 
     z-index: 1;
