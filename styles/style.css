@@ -302,15 +302,23 @@ body {
     font-weight: bolder;
 }
 
+/* ============================== NEXT PAGE chapterOneScreenTwo=============================== */
 
-/*====================================================================== next screen */
+
 #chapterOneScreenTwo {
-    display: none;
+    display: flex;
     /* this one switches it on and off */
-    height: 100vw;
+    height: 100vh;
 
+}
 
-
+#chapterOneScreenTwo .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
 
 }
 
@@ -325,6 +333,8 @@ body {
     padding: 10px;
     /* Add padding for spacing */
 }
+
+
 
 /* Top box with 20% height and full width */
 #chapterOneScreenTwo .chapterOneBox {
@@ -379,6 +389,7 @@ body {
 }
 
 #chapterOneScreenTwo .threeOptions h3 {
+
     text-align: center;
 
 }
@@ -408,6 +419,7 @@ body {
     color: white;
     font-size: xx-large;
 }
+
 
 #chapterOneScreenTwo .speechBubble {
     top: -150px;
@@ -439,18 +451,27 @@ body {
     font-weight: bolder;
 }
 
-
-
-/*====================================================================== next screen */
+/* ============================== NEXT PAGE chapterOneScreenThree=============================== */
 
 
 #chapterOneScreenThree {
-    display: none;
+    display: flex;
     /* this one switches it on and off */
+    height: 100vh;
 
 }
 
-#chapterOneScreenThree .box {
+#chapterOneScreenThree .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
 
 
     box-sizing: border-box;
@@ -462,12 +483,7 @@ body {
     /* Add padding for spacing */
 }
 
-/* Set the height of the entire page to 100% */
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
+
 
 /* Top box with 20% height and full width */
 #chapterOneScreenThree .chapterOneBox {
@@ -522,6 +538,7 @@ body {
 }
 
 #chapterOneScreenThree .threeOptions h3 {
+
     text-align: center;
 
 }
@@ -582,33 +599,808 @@ body {
     font-weight: bolder;
 }
 
-/*====================================================================== next screen */
+
+/* ============================== NEXT PAGE chapterOneScreenFour=============================== */
 
 
 #chapterOneScreenFour {
-    display: none;
+    display: flex;
+    /* this one switches it on and off */
+    height: 100vh;
+
 }
 
-/*====================================================================== next screen */
+#chapterOneScreenFour .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+
+
+/* Top box with 20% height and full width */
+#chapterOneScreenFour .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+
+}
+
+/* Bottom box with 10% height and full width */
+#chapterOneScreenFour .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#chapterOneScreenFour .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#chapterOneScreenFour .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#chapterOneScreenFour .centreCentreBox {
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/ericsmith.avif);
+    background-size: cover;
+}
+
+/* Right column with 15% width and full height of middle container */
+#chapterOneScreenFour .midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+#chapterOneScreenFour .threeOptions h3 {
+
+    text-align: center;
+
+}
+
+#chapterOneScreenFour .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#chapterOneScreenFour .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#chapterOneScreenFour .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#chapterOneScreenFour .speechBubble {
+    top: -80px;
+    left: -250px;
+    width: 360px;
+    height: 340px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+#chapterOneScreenFour .speechBubble:before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 36px solid white;
+}
+
+#chapterOneScreenFour .textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* ============================== NEXT PAGE chapterTwoScreenOne=============================== */
+
+
 
 #chapterTwoScreen1 {
-    display: none;
+    display: flex;
+    /* this one switches it on and off */
+    height: 100vh;
+
 }
 
-/*====================================================================== next screen */
+#chapterTwoScreen1 .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+
+
+/* Top box with 20% height and full width */
+#chapterTwoScreen1 .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+}
+
+/* Bottom box with 10% height and full width */
+#chapterTwoScreen1 .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#chapterTwoScreen1 .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#chapterTwoScreen1 .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#chapterTwoScreen1 .centreCentreBox {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/tunnels/tunnel1.png);
+    background-size: cover;
+}
+
+
+#chapterTwoScreen1 .centreCentreBox::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-image: url(/img/walkingBiden1-transformed.png);
+    background-size: 100%;
+
+    z-index: 1;
+
+}
+
+/* Right column with 15% width and full height of middle container */
+#chapterTwoScreen1 .midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+#chapterTwoScreen1 .threeOptions h3 {
+
+    text-align: center;
+
+}
+
+#chapterTwoScreen1 .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#chapterTwoScreen1 .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#chapterTwoScreen1 .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#chapterTwoScreen1 .speechBubble {
+    top: -150px;
+    left: 100px;
+    width: 360px;
+    height: 200px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+#chapterTwoScreen1 .speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+#chapterTwoScreen1 .textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* ============================== NEXT PAGE chapterTwoScreenTwo=============================== */
+
+
 
 #chapterTwoScreen2 {
-    display: none;
+    display: flex;
+    /* this one switches it on and off */
+    height: 100vh;
+
 }
 
-/*====================================================================== next screen */
+#chapterTwoScreen2 .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+
+
+/* Top box with 20% height and full width */
+#chapterTwoScreen2 .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+
+}
+
+/* Bottom box with 10% height and full width */
+#chapterTwoScreen2 .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#chapterTwoScreen2 .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#chapterTwoScreen2 .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#chapterTwoScreen2 .centreCentreBox {
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/compInTunnelOne.png);
+    background-size: cover;
+}
+
+/* Right column with 15% width and full height of middle container */
+#chapterTwoScreen2 .midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+#chapterTwoScreen2 .threeOptions h3 {
+
+    text-align: center;
+
+}
+
+#chapterTwoScreen2 .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#chapterTwoScreen2 .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#chapterTwoScreen2 .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#chapterTwoScreen2 .speechBubble {
+    top: -40px;
+    left: 380px;
+    width: 200px;
+    height: 340px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+.speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+.textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+
+/* ============================== NEXT PAGE The last Chapter Game Over =============================== */
+
+
+
 
 #gameOverScreen {
-    display: none;
+    display: flex;
+    /* this one switches it on and off */
+    height: 100vh;
+    background-color: black;
 }
 
-/*====================================================================== next screen */
+#gameOverScreen .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+/* Set the height of the entire page to 100% */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Top box with 20% height and full width */
+#gameOverScreen .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+}
+
+/* Bottom box with 10% height and full width */
+#gameOverScreen .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#gameOverScreen .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#gameOverScreen .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#gameOverScreen .centreCentreBox {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/fireEndScreen.png);
+    background-size: cover;
+}
+
+
+#gameOverScreen .centreCentreBox::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-image: url(/img/joeBidenSmelsGas\ 2.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+
+}
+
+/* Right column with 15% width and full height of middle container */
+#gameOverScreen .midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+#gameOverScreen .threeOptions h3 {
+
+    text-align: center;
+
+}
+
+#gameOverScreen .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#gameOverScreen .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#gameOverScreen .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#gameOverScreen .speechBubble {
+    top: -50px;
+    left: 250px;
+    width: 360px;
+    height: 200px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+#gameOverScreen .speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+#gameOverScreen .textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* ============================== NEXT PAGE The last Chapter CONGRATULATIONS! =============================== */
+
+
 
 #congratulationsScreen {
-    display: none;
+    display: flex;
+    /* this one switches it on and off */
+    height: 100vh;
+    background-color: black;
+}
+
+#congratulationsScreen .secondScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures columns stretch to the same height */
+    flex-wrap: wrap;
+    /* Allows columns to wrap to the next line if necessary */
+
+}
+
+.box {
+
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    /* Add padding for spacing */
+}
+
+/* Set the height of the entire page to 100% */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Top box with 20% height and full width */
+#congratulationsScreen .chapterOneBox {
+
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0);
+    /* IE6-9 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    transition: font-size 1s;
+    text-transform: uppercase;
+    left: 22%;
+
+}
+
+/* Bottom box with 10% height and full width */
+#congratulationsScreen .bottomBox {
+    width: 100%;
+    height: 10%;
+}
+
+/* Container for the middle boxes */
+#congratulationsScreen .middleContainer {
+    width: 100%;
+    height: 70%;
+    /* Takes up the remaining height */
+    display: flex;
+}
+
+/* Left column with 15% width and full height of middle container */
+#congratulationsScreen .midLeftCol {
+    width: 15%;
+    height: 100%;
+}
+
+/* Center column with 70% width and full height of middle container */
+#congratulationsScreen .centreCentreBox {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/fireworks.jpg);
+    background-size: cover;
+}
+
+
+#congratulationsScreen .centreCentreBox::after {
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: 80;
+    width: 60%;
+    height: 60%;
+    background-image: url(/img/joemadeit-transformed.png);
+    background-size: 100%;
+
+    z-index: 1;
+
+}
+
+/* Right column with 15% width and full height of middle container */
+#congratulationsScreen .midRightCol {
+    width: 15%;
+    height: 100%;
+}
+
+#congratulationsScreen .threeOptions h3 {
+
+    text-align: center;
+
+}
+
+#congratulationsScreen .optionButtons {
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#congratulationsScreen .optionButtons:hover {
+    background-color: rgb(74, 209, 74);
+    color: rgb(105, 10, 0);
+}
+
+#congratulationsScreen .leftScoreSide h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#scoreKeeper {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+#congratulationsScreen .speechBubble {
+    top: -50px;
+    left: 250px;
+    width: 360px;
+    height: 200px;
+    background: white;
+    position: relative;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: black;
+}
+
+#congratulationsScreen .speechBubble:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 36px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid white;
+}
+
+#congratulationsScreen .textInSpeechBubble {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
 }
