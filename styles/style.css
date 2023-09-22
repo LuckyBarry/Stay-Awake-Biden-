@@ -230,7 +230,7 @@ body {
 #chapterOneScreenOne .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(./bidenSituationMir.png);
+    background-image: url(/bidenSituationMir.png);
     background-size: cover;
 }
 
@@ -378,7 +378,7 @@ body {
 #chapterOneScreenTwo .centreCentreBox {
     width: 70%;
     height: 100%;
-    background-image: url(./img/ericsmith.avif);
+    background-image: url(/img/ericsmith.avif);
     background-size: cover;
 }
 
